@@ -1,6 +1,6 @@
-const http = require("http");
-const server = http.createServer((req, res) => {
-  console.log(req.url);
-  res.end("Hello Node.js");
+const express = require("express");
+const app = new express();
+
+app.listen(4000, () => {
+  console.log("Server started");
 });
-server.listen(3000);
